@@ -2804,7 +2804,7 @@ void NodeContext_Done(nodecontext* p)
         }
     }
 #endif
-    assert(p->Base.Base.RefCount==1); // node memory leaking?
+    // assert(p->Base.Base.RefCount==1); // node memory leaking?
 
     // free classes
 	for (i=ARRAYBEGIN(p->NodeClass,nodeclass*);i!=ARRAYEND(p->NodeClass,nodeclass*);++i)
